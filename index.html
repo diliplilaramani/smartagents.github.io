@@ -1,1 +1,19 @@
-Hello World
+<!-- Smart Agents SDK files -->
+<script src="https://cdn.jsdelivr.net/npm/protobufjs@7.X.X/dist/protobuf.min.js"></script>
+<script src="https://app.smartagents.in/sdk/AudioVisualizer.js"></script>
+<script src="https://app.smartagents.in/sdk/voice-chat.js"></script>
+<script src="https://app.smartagents.in/sdk/text-chat.js"></script>
+<script src="https://app.smartagents.in/sdk/agent-chat.js"></script>
+<script>
+  $(document).ready(function() {
+      const chat = new AgentChat({
+          agentId: '74d39210-8c7f-427f-a1c1-c0ca0ba31fe9',  // Replace with your agent ID from Smart Agents dashboard
+          primaryColor: '#ebc725',
+          title: 'QuaraBot AI Agent',
+          welcomeMessage: 'Hi! How can I help you today?',
+          position: 'bottom-right',
+          chatEnabled: true,
+          voiceEnabled: true
+      });
+  });
+</script>
